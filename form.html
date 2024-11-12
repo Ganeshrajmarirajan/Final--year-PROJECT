@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: blue;
+            background-image: linear-gradient("to bottom",rgb(3, 3, 202),blue);
+        }
+     form{
+        width: 300px;
+        height: 500px;
+        background-color: rgb(214, 214, 58);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 14px;
+
+
+     }
+     .in{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+     }
+ input,select{
+    height: 30px;
+    border: 0;
+    border-radius: 4px;
+    width: 80%;
+ }
+    </style>
+</head>
+<body>
+    <form action="sub.php" method="post">
+        <h2>Place order</h2>
+      <div class="in">
+        <input type="text" name="name" placeholder="name">
+      </div>
+      <div class="in">
+        <input type="tel" name="num" placeholder="Mobile number">
+      </div>
+      <div class="in">
+        <input type="email" placeholder="Email" name="email">
+      </div>
+     
+      <div class="in">
+       <select name="cat" id="">
+        <option value="">BillBook</option>
+        <option value="">Card</option>
+        <option value="">Invitation</option>
+        <option value="">Flyers</option>
+        <option value="">Letterhead</option>
+       </select>
+      </div>
+    <div class="in">
+        <input type="submit" name="" id="">
+    </div>
+
+
+    </form>
+</body>
+</html>
